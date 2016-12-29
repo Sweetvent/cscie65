@@ -1,0 +1,357 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title> CSCI E-65: Mobile Application Development Using Swift and iOS </title>
+    <link rel="stylesheet" type="text/css" href="css/web.css" />
+  </head>
+  
+  <body>
+      <img style="width: 100%;" 
+	   src="https://canvas.harvard.edu/courses/20103/files/2984999/preview?verifier=egkAJQ22st6kt7amJklqdQoM7X1FRnKYSw9miPWd" 
+	   alt="Marquee image: Harvard Extension School shield on decorative paper" 
+	   data-api-endpoint="https://canvas.harvard.edu/api/v1$IMS-CC-FILEBASE$/Template%20images/PaperShieldBanner.png" 
+	   data-api-returntype="File" />
+
+    <div class="main-content">
+
+      <h3 style="text-align: right;">
+	NON-OFFICIAL: SUBJECT TO CHANGE before start of class. Rev: 28 Dec. 2016
+      </h3>
+      <h1 style="float: left;">CSCI E-65: Mobile Application Development Using Swift and iOS</h1>
+      <h2 style="float: right;">Spring 2017</h2>
+      
+      <dl>
+	<dt>Instructor</dt><dd><em>Daniel Bromberg</em><a href="mailto:bromberg@fas.harvard.edu">bromberg@fas.harvard.edu</a></dd>
+	<dt>TF</dt><dd><em>Hassan Ghaed</em><a href="mailto:mhaghaed@gmail.com">mhaghaed@gmail.com</a></dd>
+	<dt>Location</dt><dd><a href="https://map.harvard.edu/?ctrx=759703.5&ctry=2963362&level=9">Maxwell Dworkin G125 (map)</a></dd>
+	<dt>Lectures</dt><dd>Monday 7:40&mdash;9:40PM</dd>
+	<dt>Sections</dt><dd>Each TF leads a 60 to 75-minute online-only section. Web
+	  conferencing software. Students will be notified of section schedules by start of
+	  class.</dd>
+      </dl>
+
+      <section>  
+	<p><strong>Objective</strong>To lay a foundation in the concepts, libraries, and
+	  development tools necessary to create and deploy a realistic "App" (mobile
+	  software application) on latest-generation iPhones and iPads. We will focus on the
+	  fundamentals: the rapidly maturing Swift programming language; the Xcode IDE
+	  (Integrated Development Environment); the iOS development cycle especially the
+	  Xcode interactive debugger; the essential Foundation and Cocoa Touch libraries;
+	  Apple best practices, especially the Model-View-Controller paradigm; responsive
+	  event handling, such as thread-aware task dispatching; the storage and recall of
+	  user data to remote & local databases; and deploying apps via iTunes Connect.
+	</p>
+	<p>
+	  While the iOS API and Xcode toolset is vast, we intend to show enough core
+	  material and patterns such that students graduate able to apply their knowledge to
+	  uncharted territory and rapidly absorb advanced material on their own.
+	</p>
+      </section>
+
+      <section>
+	<p><strong>Pre-qualifications</strong>Students must
+	  take <a href="/cscie65/admin/PreQualTestSpring2017.pdf">self-assessment test</a>
+	  before enrolling. The test should take less than an hour. Answers will be available in
+	  a sub-directory. It is important before enrolling and investing considerable
+	  time &amp; expense in the course that you feel confident in your answers. Please
+	  e-mail me individually if you are unsure about any particular answer or the
+	  overall difficulty level.
+	</p>
+	
+	<p>
+	  <strong>READINGS</strong>Readings will come from a combination of: The Apple
+	  Developer Library; Chapters from new e-Books; and online tutorials. Students must
+	  understand that due to the young age of the technology, written documentation is
+	  relatively scarce and academic-grade texts do not yet exist. It is essential to be
+	  comfortable assembling know-how through a variety of sources, which will vary
+	  considerably in style, abstraction level, and intellectual depth.
+	</p>
+	
+	<p>
+	  The following introductory material is highly recommended as preparation for the
+	  first class and will be due for the 2nd class. Note all videos must be viewed in
+	  Safari on MacOS or iOS, the WWDC iOS App, or through iTunes Podcasts.
+	</p>
+
+	<ul>
+	  <li><a href="https://developer.apple.com/swift/">One-page promotional background</a></li>
+	  <li><a href="https://developer.apple.com/videos/wwdc/2014/#402">Official intro video at WWDC 2014</a></li>
+	  <li><a href="https://developer.apple.com/videos/play/wwdc2015/106/">What&rsquo;s new in Swift 2.0</a></li>
+	  <li><a href="https://developer.apple.com/videos/play/wwdc2016/402/">What&rsquo;s new in Swift 3.0</a></li>
+	  <li><a href="https://developer.apple.com/library/ios/documentation/Swift/Conceptual/Swift_Programming_Language/GuidedTour.html">Technical introduction to Swift</a></li>
+	</ul>
+	
+	<p>
+	  <strong>EQUIPMENT</strong>Students must bring their own portable Mac running OSX
+	  10.12, with at least 4GB of RAM, an iOS device running iOS 10 with the latest
+	  updates, and Xcode 8 with the latest updates. For those interested in specializing
+	  their work for the iPad, owning one is highly recommended as well. In order to
+	  install apps on their own devices and distribute their compiled Apps to their peers
+	  and staff, students <em>do not</em> need be a member of any Apple program. Instead,
+	  any device physically connected to your development machine can accept installation
+	  of any App you write. The catch is that developer Apps will be valid for just two
+	  weeks from the point of installation. As soon as you re-install, however, the two
+	  week deadline is renewed.
+	</p>
+	
+	<p>
+	  <strong>CLASS ASSIGNMENTS</strong>(which include readings) and lecture teaching
+	  materials (mostly example code, some diagrams) will be hosted at a private Git
+	  server:<br>
+          <a href="/cscie65/assignments">http://git.classyswift.com/e65.git/assignments</a> (TO BE CHANGED LIKELY TO GITHUB soon)<br />
+	  <a href="/cscie65/lectures">http://git.classyswift.com/e65.git/lectures</a><br />
+	  Each student will also have an individual repository, with a username and
+	  password, into which they will submit all assigned work. The naming conventions
+	  will be spelled out so that all submissions have the same directory structure.
+	</p>
+	
+	<p>
+	  <strong>ONLINE DISCUSSION</strong>We will have a moderated discussion forum in
+	  Canvas, with one thread per assignment. This is an essential tool to disseminate
+	  information efficiently in a fast-paced environment.
+	</p>
+	
+	<p>
+	  <em>All questions about the course material should be directed to this forum for
+	    maximum visibility to staff and students.</em> Students are strongly encouraged to
+	  use the forum on a daily basis to make their homework time efficient. Show
+	  leadership by asking questions. If you have a question that conerns the
+	  fundamentals, so does at least a third of the class. As far as the staff is
+	  concerned, a central premise of learning programming is doing some research,
+	  trying a few solutions, getting stuck, and asking an informed question – no matter
+	  how &lsquo;basic&rsquo; you think it is. Participation credit is generously
+	  awarded for such efforts.
+	</p>
+
+	<p>
+	  <strong>OTHER CONTACT</strong>E-mail, calls, and texts to the staff should only be
+	  used if you feel you need privacy, and in that order.
+	</p>
+
+	<p>
+	  <strong>IDE</strong>XCode
+	  8.2 <a href="https://developer.apple.com/xcode/ide/">https://developer.apple.com/xcode/ide/</a>
+	</p>
+	
+	<p>
+	  <strong>ONLINE READ-EVALUATE-PRINT-LOOP (REPL)</strong>
+	  <a href="https://swiftlang.ng.bluemix.net/#/repl">https://swiftlang.ng.bluemix.net</a>
+	  This is a pure Swift simulator - that is, nothing iOS specific - in a simulated
+	  terminal. It is good for entering experimental snippets to help learn the core
+	  language, such as closures and looping syntax. This is not an official Apple site;
+	  however it is quite nice.
+	</p>
+
+	<p>
+	  <strong>WORKLOAD</strong>This is an intensive course with ambitious goals of
+	  teaching a new programming language, an IDE, several frameworks, a variety of UI and
+	  design concepts, and practical debugging and deployment knowledge. Assignments will
+	  be issued once per week and due the next week. Students must commit to roughly 15
+	  hours per week of homework, 3 hours per week of in-person class/section, and 30-60
+	  minutes of pre-recorded lectures that cover pre-requisites for actual class.
+	</p>
+
+	<section>
+	  <p>
+	    <strong>ASSIGNMENTS</strong>Timely completion of reading and assignments is
+	    absolutely essential. There will not be much time for the staff to help students
+	    catch up on missed work or missed classes. Late work will not be accepted except for
+	    medical emergency or religious observance (for the latter, prior notification
+	    required). Because some answers may be revealed. in subsequent lectures, work that’s
+	    even a little bit late will not be accepted. Rather we will be very inclined towards
+	    partial credit as long as you turn in what you have on time, even if it doesn’t work
+	    or won’t compile. If you are having technical difficulties in submission, let us
+	    know immediately at the start of class and a TF will help you.
+	  </p>
+	  <p>
+	    In the event of any conflicting or ambiguous information on exactly what’s
+	    expected from each assignment, whether logistics or content, please let us know
+	    immediately. The Head TF is the final authority for all homework related matters.
+	  </p>
+	</section>
+	
+	<section>
+	  <p>
+	    <strong>Grading</strong>25% Class participation (includes section); 50% general
+	    assignments; 25% final project.
+	  </p>
+
+	  <p>
+	    <strong>Attendance</strong>Because all lectures are now archived in this edition
+	    of the course with viewer tracking, all lectures must be attended in person or
+	    show as viewed to receive a grade.
+	  </p>
+	</section>
+	
+	<section>
+	  <p>
+	    <strong>Academic honesty &amp; integrity</strong>You are bound
+	    by <a href="https://www.extension.harvard.edu/resources-policies/student-conduct/academic-integrity">these
+	      policies</a> for the entire course:<br />
+	    
+	    https://www.extension.harvard.edu/resources-policies/student-conduct/academic-integrity<br />
+	    
+	    There is no flexibility in these rules because they apply to the entire Harvard
+	    Extension School.</p>
+
+	  <p>In addition, defining plagiarism in computer code has unique challenges, partly
+	    due to the fact that some simple techniques, especially those mandated by the
+	    given API or OS, are virtually identical across all programs, whereas deeper
+	    designs and algorithms vary as widely as original poems by different
+	    authors. When you learn how to do something from code on the Internet,
+	    no matter how well the learning process worked, and no matter how short the
+	    example,<br />
+
+	    <strong style="text-align: center;">you must cite the source - SINGLE LINE SOURCES INCLUDED.</strong><br />
+
+	    The citation should appear as a comment (usually a valid URL, or complete book
+	    title and page) right above the relevant code. The only exception is if we've
+	    already given the source to the entire class. In particular, any snippets in the
+	    Apple Technical documentation need not be cited.
+	  </p>
+	  
+	  <p>The citation process is not merely busy-work; it helps us learn what students
+	    need help with, and to see if they're using good, up-to-date learning tools.
+	  </p>
+
+	  <p>
+	    There is never a penalty for citing any (or many) sources; in fact it will reflect
+	    positively in your participation in the course. Before doing online search for
+	    pre-cooked solutions, however, apply some pedagogical sense:<br />
+	    
+            <strong style="text-align: center;">For the first assignment, many answers are
+	      just one or two lines. Think about how best to learn. Learning a language requires
+	      writing code from scratch - using the fundamentals. It doesn't matter if there are
+	      dozens of existing solutions that are just a few search keywords away. Use
+	      official Apple documentation, Apple tutorials, and the help of the staff only.</strong><br />
+	  </p>
+	</section>
+
+	<section>
+	  <p>
+	    <strong>Accomodations / disability services:</strong>In accordance with
+	    <a href="https://www.extension.harvard.edu/resources-policies/resources/disability-services-accessibility">Extension
+	      School-wide policy: https://www.extension.harvard.edu/resources-policies/resources/disability-services-accessibility</a>
+	  </p>
+	</section>
+
+	<section>
+	  <p><strong>Lecture schedule</strong><br />
+	    <a href="https://www.extension.harvard.edu/academic-calendar">Harvard-wide calendar:
+	      https://www.extension.harvard.edu/academic-calendar</a> Lectures will be heavily
+	    example-driven. Much of the material will be refined in layers over several
+	    classes. Schedule will also be adjusted to prevent average student workload from
+	    significantly exceeding aforementioned estimates.
+	  </p>
+	  
+	  <table style="width: 100%; max-width: 900px;">
+	    <thead>
+              <th>Week</th>
+              <th>Date</th> 
+              <th>Focus</th>
+              <th>Specific Topics</th>
+	    </thead>
+	    <tbody>
+	      <tr>
+		<td>1</td>
+		<td>2017-01-23</td>
+		<td>Introduction to Swift and Xcode for iOS</td>
+		<td>Policies; Student Surveys; Xcode Intro: Demo of a basic iOS App &amp;
+		  Playgrounds; a look at the Swift language</td>
+	      </tr>
+	      <tr>
+		<td>2</td>
+		<td>2017-01-30</td>
+		<td>App development and Swift essentials</td>
+		<td>Navigating Xcode to create a real project: StoryBoards, Source files, &amp;
+		  wiring them together (References &amp; Outlets); Swift essentials: Arrays,
+		  Dictionaries, functions, Optionals, Control Flow</td>
+	      </tr>
+	      <tr>
+		<td>3</td>
+		<td>2017-02-06</td>
+		<td>Structuring a larger project Xcode and Swift</td>
+		<td>Organizational concepts: Coordinating multiple source files; Swift classes
+		  &amp; structs; Essential debugging; Basic interactive controls within UIKit</td>
+	      </tr>
+	      <tr>
+		<td>4</td>
+		<td>2017-02-13</td>
+		<td>The iOS API: Cocoa Touch</td>
+		<td>UIKit building blocks: Views and View Controllers; important UIKit interactive
+		  and display widgets, attribute customization</td>
+	      </tr>
+	      <tr>
+		<td>5</td>
+		<td>2017-02-20</td>
+		<td>Layout and Drawing</td>
+		<td>The Xcode Autolayout engine; working with constraints and the Scene
+		  hierarchy. Basic custom drawing (2D Quartz library); Touches and Gestures</td>
+	      </tr>
+	      <tr>
+		<td>6</td>
+		<td>2017-02-27</td>
+		<td>Model-View-Controller</td>
+		<td>Clean separation of concerns; bringing together the essential pieces of any
+		  GUI App: Protocols, delegation, distinct model classes, observed properties, and
+		  notifications</td>
+	      </tr>
+	      <tr>
+		<td>7</td>
+		<td>2017-03-06</td>
+		<td>Pulling pieces into multi-screen app</td>
+		<td>Application Lifecycle; Multiple views of same data, multi-screen apps: Tabbed Views, Hierarchical (Navigation Controller) Views</td>
+	      </tr>
+	      <tr>
+		<td>&mdash;</td>
+		<td>2017-03-10</td>
+		<td>NO CLASS</td>
+		<td>SPRING BREAK</td>
+	      </tr>
+	      <tr>
+		<td>8</td>
+		<td>2017-03-17</td>
+		<td>Persistence; structured data display</td>
+		<td>Timers; Property Lists (XML); JSON; NSCoder; Core Data; Table &amp; List views</td>
+	      </tr>
+	      <tr>
+		<td>9</td>
+		<td>2017-03-24</td>
+		<td>Tables and data retrieval</td>
+		<td>UITableView; JSON parsing and display</td>
+	      </tr>
+	      <tr>
+		<td>10</td>
+		<td>2017-04-03</td>
+		<td>Tables with images &amp; navigation</td>
+		<td>Advanced Tables w/Navigation controller Images; background (network-bound) data handling</td>
+	      </tr>
+	      <tr>
+		<td>11</td>
+		<td>2017-04-10</td>
+		<td>3rd party integration</td>
+		<td>Tying App to FaceBook and Parse.com for user authentication, social sharing, and data storage</td>
+	      </tr>
+	      <tr>
+		<td>12</td>
+		<td>2017-04-17</td>
+		<td>MapKit &amp; GPS</td>
+		<td>Geotagging, Map annotations, using phone’s built-in GPS; Review of other topics as needed</td>
+	      </tr>
+	      <tr>
+		<td>13</td>
+		<td>2017-04-24</td>
+		<td>Additional Frameworks, Project feedback</td>
+		<td>Physics (UIDynamics); Other topics, depending on student interest. Possibilities include: Review of previous advanced topics; Accelerometer; Affine Transforms; Font formatting</td>
+	      </tr>
+	      <tr>
+		<td>14</td>
+		<td>2017-05-01</td>
+		<td>Presentations</td>
+		<td>3-minute live &amp; video presentation marathon.</td>
+	      </tr>
+	    </tbody>
+	  </table> <!-- schedule -->
+    </div> <!-- main-content -->
+  </body>
+</html>
