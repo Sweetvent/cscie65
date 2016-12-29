@@ -4,6 +4,19 @@ body {
     margin-left: 2.0em;
 }
 
+h1 {
+    font-size: 20pt;
+}
+
+h2 {
+    font-size: 16pt;
+}
+
+h3 {
+    font-size: 14pt;
+}
+
+
 table, th, td {
     border: 1px solid black;
 }
