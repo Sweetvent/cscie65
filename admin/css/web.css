@@ -26,12 +26,21 @@ h3 {
 }
 
 
-table, th, td {
-    border: 1px solid black;
+table > tbody > th > td {
+    padding: 7px;
 }
 
-th, td {
+table > tbody > tr > td {
+    border: 1px solid black;
     padding: 5px;
+    height: 40pt;
+}
+
+table > tbody > tr > td:first-child {
+    font-size: 14pt;
+    background-color: lightgray;
+    text-align: right;
+    padding-right: 0.5em;
 }
 
 table {
