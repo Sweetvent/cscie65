@@ -1,0 +1,59 @@
+body {
+    font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    font-size: 12pt;
+    margin-left: 2.0em;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+section, dl {
+    max-width: 900px;
+}
+
+section strong {
+    text-transform: uppercase;
+    margin-right: 1.0em;
+}
+
+p {
+    text-align: justify;
+}
+
+dl {
+    overflow: auto;
+    clear: both;
+    margin-bottom: 2em;
+}
+
+dt {
+    display: inline-block;
+    width: 7em;
+    font-weight: bold;
+    float: left;
+    clear: both;
+}
+
+dt::after {
+    content: ":";
+}
+
+dd {
+    float: left;
+    max-width: 700px;
+}
+
+section {
+    clear: both;
+}
+
+dl > dd > em {
+    width: 15em;
+    font-style: normal;
+    display: inline-block;
+}
