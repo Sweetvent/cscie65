@@ -5,7 +5,6 @@ div.main-content {
 }
 
 html {
-    text-align: center; /* works with body margin to center body */
     margin: 10px 10px;
     background: rgb(230, 230, 230);
 }
