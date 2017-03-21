@@ -1,30 +1,45 @@
 div.main-content {
+    margin-top: 80px;
     margin-left: auto;
     margin-right: auto;
-    max-width: 960px;
-    padding-left: 0.5em;
-    padding-right: 0.5em;
+}
+
+html {
+    text-align: center; /* works with body margin to center body */
+    margin: 10px 10px;
+    background: rgb(230, 230, 230);
 }
 
 body {
-    margin: 2 2 2 2;
+    margin: auto;
+    background: white;
     border: 3px solid #7c5621;
     font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
     font-size: 12pt;
+    max-width: 10in;
+    min-width: 5.5in;
+    position: relative;
+    padding: 0 15px;
 }
 
 h1 {
-    font-size: 20pt;
+    text-align: center;
+    font-size: 22pt;
 }
 
 h2 {
-    font-size: 16pt;
+    text-align: center;
+    font-size: 18pt;
 }
 
 h3 {
     font-size: 14pt;
 }
 
+h3, h4 { 
+    margin-top: 0.5em;
+    margin-bottom: 0.2em; 
+}
 
 table > tbody > th > td {
     padding: 7px;
@@ -47,10 +62,6 @@ table {
     border-collapse: collapse;
 }
 
-section, dl {
-    max-width: 900px;
-}
-
 section strong {
     text-transform: uppercase;
     margin-right: 1.0em;
@@ -58,6 +69,7 @@ section strong {
 
 p {
     text-align: justify;
+    line-height: 1.3em;
 }
 
 dl {
@@ -80,7 +92,6 @@ dt::after {
 
 dd {
     float: left;
-    max-width: 700px;
 }
 
 section {
@@ -91,4 +102,30 @@ dl > dd > em {
     width: 15em;
     font-style: normal;
     display: inline-block;
+}
+
+li {
+    margin-top: 0.5em;
+}
+
+@media (min-width:768px){.header__logo{left:initial;top:7px;width:280px;height:90px;}
+}
+@media (min-width:992px){.header__logo{position:relative;width:191px;top:11px;height:95px;left:0;background-size:293px 95px;}
+}
+@media (min-width:1200px){.header__logo{top:14px;height:121px;width:250px;background-size:374px 121px;}
+}
+
+.topgraphic {
+    transform: scale(1.5) translate(22%, 18%);
+    background-repeat: no-repeat;
+    display: block;
+    height: 150px;
+    width: 235px;
+    margin: 0;
+    background-size: contain;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    transition: all .25s ease;
 }
