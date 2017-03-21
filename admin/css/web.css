@@ -91,6 +91,7 @@ dt::after {
 
 dd {
     float: left;
+    max-width: 80%;
 }
 
 section {
